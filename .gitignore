@@ -1,0 +1,5 @@
+.log
+.pyc
+books/
+.idea
+__pycache__
