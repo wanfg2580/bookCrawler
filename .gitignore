@@ -3,3 +3,4 @@
 books/
 .idea
 __pycache__
+logs/
