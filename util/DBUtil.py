@@ -33,4 +33,7 @@ class MysqlUtil:
     def execue(self, sql):
         if self.__db is None:
             self.initconn()
-        self.__cursor.execute(sql)
+        return self.__cursor.execute(sql)
+
+    def fetchmany(self, data):
+        return self.__cursor.fetchmany(data)

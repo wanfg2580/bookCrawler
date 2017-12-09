@@ -5,7 +5,6 @@ import re
 import time
 import random
 from util.DBUtil import MysqlUtil
-from util.getProxy import proxy
 
 logger = Config.loggerinfo()
 bookDB = MysqlUtil('localhost', 3306, 'root', 'root', 'book')
@@ -81,7 +80,7 @@ def getweb(url, header):
 
 def main():
     url = "http://mebook.cc/download.php?id="
-    for i in range(2833, 20000):  # 20000
+    for i in range(19401, 20000):  # 20000
         getinfo(url + str(i), i)
         time.sleep(2)
     bookDB.close()
